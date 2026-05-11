@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV | Yamil A. Cahuana Medrano</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+<style>
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+
+    :root {
+      --accent: #7dd3fc;
+      --bg-dark: #0a0a0a;
+      --bg-card: #18181b;
+      --border: #27272a;
+    }
+
+    body {
+      font-family: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+      background-color: var(--bg-dark);
+      color: #fafafa;
+    }
+
+    .font-mono {
+      font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    }
+
+    .cv-page {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    .cv-section {
+      margin-bottom: 2.5rem;
+    }
+    .cv-section-title {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--accent);
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .cv-entry {
+      margin-bottom: 1.25rem;
+    }
+    .cv-entry:last-child {
+      margin-bottom: 0;
+    }
+    .cv-entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .cv-entry-title {
+      font-weight: 600;
+      color: #fafafa;
+    }
+    .cv-entry-date {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.75rem;
+      color: var(--accent);
+    }
+    .cv-entry-subtitle {
+      color: #a1a1aa;
+      font-size: 0.875rem;
+    }
+    .cv-entry-description {
+      color: #a1a1aa;
+      font-size: 0.875rem;
+      margin-top: 0.25rem;
+    }
+    .cv-tag {
+      display: inline-block;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.7rem;
+      padding: 0.25rem 0.75rem;
+      background: var(--border);
+      border-radius: 9999px;
+      color: #a1a1aa;
+      margin: 0.25rem 0.25rem 0.25rem 0;
+    }
+    .cv-link {
+      color: var(--accent);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .cv-link:hover {
+      color: #bae6fd;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body class="bg-[#0a0a0a] text-[#fafafa] font-sans min-h-screen">
+  <div class="py-12 px-4">
+    <div class="cv-page">
+      <a href="index_es.html" class="inline-flex items-center gap-2 text-zinc-400 hover:text-sky-400 font-mono text-sm mb-8 transition-colors">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        Volver al sitio
+      </a>
+
+      <header class="mb-12 text-center">
+        <h1 class="text-4xl font-bold mb-2">Yamil A. Cahuana Medrano</h1>
+        <p class="text-lg text-[#a1a1aa] mb-2">Candidato a PhD en Física — William & Mary</p>
+        <p class="font-mono text-sm text-[#7dd3fc] mb-4">yacahuanamedra@wm.edu</p>
+        <div class="flex justify-center gap-4 text-sm font-mono">
+          <a href="mailto:yacahuanamedra@wm.edu" class="px-4 py-2 border border-zinc-700 rounded-lg hover:border-sky-400 hover:bg-sky-400/10 transition-all">Email</a>
+          <a href="https://github.com/yamilcahuana" target="_blank" class="px-4 py-2 border border-zinc-700 rounded-lg hover:border-sky-400 hover:bg-sky-400/10 transition-all">GitHub</a>
+          <a href="https://linkedin.com/in/yamilcahuana" target="_blank" class="px-4 py-2 border border-zinc-700 rounded-lg hover:border-sky-400 hover:bg-sky-400/10 transition-all">LinkedIn</a>
+        </div>
+      </header>
+
+      <section class="cv-section">
+        <h2 class="cv-section-title">Educación</h2>
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <span class="cv-entry-title">Ph.D. en Física</span>
+            <span class="cv-entry-date">2024 – Presente</span>
+          </div>
+          <p class="cv-entry-subtitle">William & Mary</p>
+        </div>
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <span class="cv-entry-title">M.Sc. en Física</span>
+            <span class="cv-entry-date">2022 – 2024</span>
+          </div>
+          <p class="cv-entry-subtitle">William & Mary</p>
+        </div>
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <span class="cv-entry-title">Lic. en Física</span>
+            <span class="cv-entry-date">2016 – 2021</span>
+          </div>
+          <p class="cv-entry-subtitle">Universidad Nacional Autónoma de México (UNAM)</p>
+          <p class="cv-entry-description">Tesis de licenciatura con Mención Honorífica sobre ecuaciones del grupo de renormalización en teorías tipo Modelo Estándar.</p>
+        </div>
+      </section>
+
+      <section class="cv-section">
+        <h2 class="cv-section-title">Experiencia en Investigación</h2>
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <span class="cv-entry-title">Lattice QCD y Machine Learning</span>
+            <span class="cv-entry-date">2022 – Presente</span>
+          </div>
+          <p class="cv-entry-subtitle">William & Mary & Jefferson Lab</p>
+          <p class="cv-entry-description">Desarrollo de métodos no perturbativos para reconstruir funciones de distribución de partones usando procesos gaussianos. Implementación de cálculos del modelo NJL en el retículo con operador Wilson-Dirac.</p>
+        </div>
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <span class="cv-entry-title">Física Nuclear</span>
+            <span class="cv-entry-date">2021</span>
+          </div>
+          <p class="cv-entry-subtitle">MITP</p>
+          <p class="cv-entry-description">Estudio de contribuciones inelásticas del ¹²C a asimetrías que violan paridad en dispersión de electrones.</p>
+        </div>
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <span class="cv-entry-title">Teoría Cuántica de Campos y Renormalización</span>
+            <span class="cv-entry-date">2021</span>
+          </div>
+          <p class="cv-entry-subtitle">UNAM</p>
+          <p class="cv-entry-description">Análisis de ecuaciones del grupo de renormalización y técnicas de regularización para correcciones de un loop en teorías tipo Modelo Estándar.</p>
+        </div>
+      </section>
+
+      <section class="cv-section">
+        <h2 class="cv-section-title">Publicaciones</h2>
+        <div class="cv-entry">
+          <p class="cv-entry-title">Gaussian Processes for Inferring Parton Distributions</p>
+          <p class="cv-entry-subtitle">Y. Cahuana, H. Dutrieux, J. Karpie, K. Orginos, S. Zafeiropoulos</p>
+          <p class="cv-entry-description">arXiv:2510.21041 [hep-lat] (2025)</p>
+        </div>
+      </section>
+
+      <section class="cv-section">
+        <h2 class="cv-section-title">Pláticas y Posters</h2>
+        <div class="cv-entry">
+          <p class="cv-entry-description">"Gaussian Processes for Inferring Parton Distributions" — APS Global Summit, USA, 2026</p>
+        </div>
+        <div class="cv-entry">
+          <p class="cv-entry-description">"Gaussian Processes: PDFs from LQCD Data" — WONPAQCD, UTFSM-Valparaíso (Chile), Dic 2025</p>
+        </div>
+        <div class="cv-entry">
+          <p class="cv-entry-description">"Gaussian Processes for Inferring Parton Distributions" — Jefferson Lab Cake Seminar, USA, Nov 2025</p>
+        </div>
+        <div class="cv-entry">
+          <p class="cv-entry-description">"Gaussian Processes à la Feynman" — SESAPS, James Madison University, USA, Oct 2025</p>
+        </div>
+        <div class="cv-entry">
+          <p class="cv-entry-description">"Reconstructing PDFs from Lattice QCD Data" — HUGS, Jefferson Lab, USA, Verano 2024</p>
+        </div>
+      </section>
+
+      <section class="cv-section">
+        <h2 class="cv-section-title">Premios y Becas</h2>
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <span class="cv-entry-title">Beca Fulbright García-Robles</span>
+            <span class="cv-entry-date">2022 – 2025</span>
+          </div>
+          <p class="cv-entry-subtitle">Beca de $25K/año para realizar PhD</p>
+        </div>
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <span class="cv-entry-title">John Kane Fellowship</span>
+            <span class="cv-entry-date">2022 – 2024</span>
+          </div>
+          <p class="cv-entry-subtitle">Top applicant en William & Mary</p>
+        </div>
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <span class="cv-entry-title">Titulación por Estancia Académica en el Extranjero (TEE)</span>
+            <span class="cv-entry-date">2021</span>
+          </div>
+          <p class="cv-entry-subtitle">Beca de $3K para estancia de investigación en Alemania</p>
+        </div>
+      </section>
+
+      <section class="cv-section">
+        <h2 class="cv-section-title">Habilidades Técnicas</h2>
+        <div class="cv-entry">
+          <p class="cv-entry-subtitle mb-2">Programación</p>
+          <span class="cv-tag">Python (PyTorch, PennyLane)</span>
+          <span class="cv-tag">Julia</span>
+          <span class="cv-tag">C++</span>
+          <span class="cv-tag">Bash</span>
+        </div>
+        <div class="cv-entry">
+          <p class="cv-entry-subtitle mb-2">Computación Científica</p>
+          <span class="cv-tag">Simulaciones Lattice QCD</span>
+          <span class="cv-tag">Métodos de Monte Carlo</span>
+          <span class="cv-tag">Machine learning para física</span>
+        </div>
+        <div class="cv-entry">
+          <p class="cv-entry-subtitle mb-2">HPC</p>
+          <span class="cv-tag">SLURM</span>
+          <span class="cv-tag">GPU computing</span>
+          <span class="cv-tag">Programación paralela</span>
+        </div>
+        <div class="cv-entry">
+          <p class="cv-entry-subtitle mb-2">Herramientas</p>
+          <span class="cv-tag">Mathematica</span>
+          <span class="cv-tag">MATLAB</span>
+        </div>
+      </section>
+
+      <section class="cv-section">
+        <h2 class="cv-section-title">Experiencia Docente</h2>
+        <div class="cv-entry">
+          <p class="cv-entry-description">Teaching Assistant — Physics for Life Sciences (Otoño 2023)</p>
+        </div>
+        <div class="cv-entry">
+          <p class="cv-entry-description">Teaching Assistant — Classical Mechanics II (Primavera 2023)</p>
+        </div>
+        <div class="cv-entry">
+          <p class="cv-entry-description">Teaching Assistant — Statistical Mechanics (Otoño 2022)</p>
+        </div>
+        <div class="cv-entry">
+          <p class="cv-entry-description">Teaching Assistant — Classical Mechanics I (Otoño 2022)</p>
+        </div>
+        <div class="cv-entry">
+          <p class="cv-entry-description">Teaching Assistant — Thermodynamics, UNAM (Primavera 2019)</p>
+        </div>
+      </section>
+
+      <section class="cv-section">
+        <h2 class="cv-section-title">Desarrollo Profesional</h2>
+        <div class="cv-entry">
+          <p class="cv-entry-description">Lattice Practices Conference — Forschungszentrum Jülich, Alemania, 2025</p>
+        </div>
+        <div class="cv-entry">
+          <p class="cv-entry-description">HUGS — Jefferson Lab, USA, Verano 2024</p>
+        </div>
+        <div class="cv-entry">
+          <p class="cv-entry-description">Quantum Computing Boot-Camp — Jefferson Lab, USA, Verano 2023</p>
+        </div>
+        <div class="cv-entry">
+          <p class="cv-entry-description">2nd School of Quantum Computing — Instituto de Ciencias Nucleares (MX), Verano 2023</p>
+        </div>
+      </section>
+
+      <footer class="mt-12 pt-8 border-t border-[#27272a] text-center">
+        <p class="text-sm text-[#a1a1aa]">© 2026 Yamil A. Cahuana Medrano</p>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
