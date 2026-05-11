@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV | Yamil A. Cahuana Medrano</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+<style>
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+
+    :root {
+      --accent: #7dd3fc;
+      --bg-dark: #0a0a0a;
+      --bg-card: #18181b;
+      --border: #27272a;
+    }
+
+    body {
+      font-family: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+      background-color: var(--bg-dark);
+      color: #fafafa;
+    }
+
+    .font-mono {
+      font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    }
+
+    .cv-page {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    .cv-section {
+      margin-bottom: 2.5rem;
+    }
+    .cv-section-title {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--accent);
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .cv-entry {
+      margin-bottom: 1.25rem;
+    }
+    .cv-entry:last-child {
+      margin-bottom: 0;
+    }
+    .cv-entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .cv-entry-title {
+      font-weight: 600;
+      color: #fafafa;
+    }
+    .cv-entry-date {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.75rem;
+      color: var(--accent);
+    }
+    .cv-entry-subtitle {
+      color: #a1a1aa;
+      font-size: 0.875rem;
+    }
+    .cv-entry-description {
+      color: #a1a1aa;
+      font-size: 0.875rem;
+      margin-top: 0.25rem;
+    }
+    .cv-tag {
+      display: inline-block;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.7rem;
+      padding: 0.25rem 0.75rem;
+      background: var(--border);
+      border-radius: 9999px;
+      color: #a1a1aa;
+      margin: 0.25rem 0.25rem 0.25rem 0;
+    }
+    .cv-link {
+      color: var(--accent);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .cv-link:hover {
+      color: #bae6fd;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body class="bg-[#0a0a0a] text-[#fafafa] font-sans min-h-screen">
+  <div class="py-12 px-4">
+    <div class="cv-page">
+      <a href="index.html" class="inline-flex items-center gap-2 text-zinc-400 hover:text-sky-400 font-mono text-sm mb-8 transition-colors">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        Back to site
+      </a>
+
+      <header class="mb-12 text-center">
+        <h1 class="text-4xl font-bold mb-2">Yamil A. Cahuana Medrano</h1>
+        <p class="text-lg text-[#a1a1aa] mb-2">PhD Candidate in Physics — William & Mary</p>
+        <p class="font-mono text-sm text-[#7dd3fc] mb-4">yacahuanamedra@wm.edu</p>
+        <div class="flex justify-center gap-4 text-sm font-mono">
+          <a href="mailto:yacahuanamedra@wm.edu" class="px-4 py-2 border border-zinc-700 rounded-lg hover:border-sky-400 hover:bg-sky-400/10 transition-all">Email</a>
+          <a href="https://github.com" target="_blank" class="px-4 py-2 border border-zinc-700 rounded-lg hover:border-sky-400 hover:bg-sky-400/10 transition-all">GitHub</a>
+          <a href="https://linkedin.com" target="_blank" class="px-4 py-2 border border-zinc-700 rounded-lg hover:border-sky-400 hover:bg-sky-400/10 transition-all">LinkedIn</a>
+        </div>
+      </header>
+
+      <section class="cv-section">
+        <h2 class="cv-section-title">Education</h2>
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <span class="cv-entry-title">Ph.D. in Physics</span>
+            <span class="cv-entry-date">2024 – Present</span>
+          </div>
+          <p class="cv-entry-subtitle">William & Mary</p>
+        </div>
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <span class="cv-entry-title">M.Sc. in Physics</span>
+            <span class="cv-entry-date">2022 – 2024</span>
+          </div>
+          <p class="cv-entry-subtitle">William & Mary</p>
+        </div>
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <span class="cv-entry-title">B.S. in Physics</span>
+            <span class="cv-entry-date">2016 – 2021</span>
+          </div>
+          <p class="cv-entry-subtitle">Universidad Nacional Autónoma de México (UNAM)</p>
+          <p class="cv-entry-description">Undergraduate thesis with Honorable Mention on renormalization group equations in Standard Model-like theories.</p>
+        </div>
+      </section>
+
+      <section class="cv-section">
+        <h2 class="cv-section-title">Research Experience</h2>
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <span class="cv-entry-title">Lattice QCD and Machine Learning</span>
+            <span class="cv-entry-date">2022 – Present</span>
+          </div>
+          <p class="cv-entry-subtitle">William & Mary & Jefferson Lab</p>
+          <p class="cv-entry-description">Development of non-perturbative methods for reconstructing parton distribution functions using Gaussian processes. Implementation of NJL model calculations on the lattice with Wilson-Dirac operator.</p>
+        </div>
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <span class="cv-entry-title">Nuclear Physics</span>
+            <span class="cv-entry-date">2021</span>
+          </div>
+          <p class="cv-entry-subtitle">MITP</p>
+          <p class="cv-entry-description">Study of inelastic contributions of ¹²C to parity-violating asymmetries in electron scattering.</p>
+        </div>
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <span class="cv-entry-title">Quantum Field Theory and Renormalization</span>
+            <span class="cv-entry-date">2021</span>
+          </div>
+          <p class="cv-entry-subtitle">UNAM</p>
+          <p class="cv-entry-description">Analysis of renormalization group equations and regularization techniques for one-loop corrections in Standard Model-like theories.</p>
+        </div>
+      </section>
+
+      <section class="cv-section">
+        <h2 class="cv-section-title">Publications</h2>
+        <div class="cv-entry">
+          <p class="cv-entry-title">Gaussian Processes for Inferring Parton Distributions</p>
+          <p class="cv-entry-subtitle">Y. Cahuana, H. Dutrieux, J. Karpie, K. Orginos, S. Zafeiropoulos</p>
+          <p class="cv-entry-description">arXiv:2510.21041 [hep-lat] (2025)</p>
+        </div>
+      </section>
+
+      <section class="cv-section">
+        <h2 class="cv-section-title">Talks & Posters</h2>
+        <div class="cv-entry">
+          <p class="cv-entry-description">"Gaussian Processes for Inferring Parton Distributions" — APS Global Summit, USA, 2026</p>
+        </div>
+        <div class="cv-entry">
+          <p class="cv-entry-description">"Gaussian Processes: PDFs from LQCD Data" — WONPAQCD, UTFSM-Valparaíso (Chile), Dec 2025</p>
+        </div>
+        <div class="cv-entry">
+          <p class="cv-entry-description">"Gaussian Processes for Inferring Parton Distributions" — Jefferson Lab Cake Seminar, USA, Nov 2025</p>
+        </div>
+        <div class="cv-entry">
+          <p class="cv-entry-description">"Gaussian Processes à la Feynman" — SESAPS, James Madison University, USA, Oct 2025</p>
+        </div>
+        <div class="cv-entry">
+          <p class="cv-entry-description">"Reconstructing PDFs from Lattice QCD Data" — HUGS, Jefferson Lab, USA, Summer 2024</p>
+        </div>
+      </section>
+
+      <section class="cv-section">
+        <h2 class="cv-section-title">Awards & Grants</h2>
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <span class="cv-entry-title">Fulbright García-Robles</span>
+            <span class="cv-entry-date">2022 – 2025</span>
+          </div>
+          <p class="cv-entry-subtitle">$25K/year grant to pursue PhD</p>
+        </div>
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <span class="cv-entry-title">John Kane Fellowship</span>
+            <span class="cv-entry-date">2022 – 2024</span>
+          </div>
+          <p class="cv-entry-subtitle">Top applicant at William & Mary</p>
+        </div>
+        <div class="cv-entry">
+          <div class="cv-entry-header">
+            <span class="cv-entry-title">Titulación por Estancia Académica en el Extranjero (TEE)</span>
+            <span class="cv-entry-date">2021</span>
+          </div>
+          <p class="cv-entry-subtitle">$3K grant for research stay in Germany</p>
+        </div>
+      </section>
+
+      <section class="cv-section">
+        <h2 class="cv-section-title">Technical Skills</h2>
+        <div class="cv-entry">
+          <p class="cv-entry-subtitle mb-2">Programming</p>
+          <span class="cv-tag">Python (PyTorch, PennyLane)</span>
+          <span class="cv-tag">Julia</span>
+          <span class="cv-tag">C++</span>
+          <span class="cv-tag">Bash</span>
+        </div>
+        <div class="cv-entry">
+          <p class="cv-entry-subtitle mb-2">Scientific Computing</p>
+          <span class="cv-tag">Lattice QCD simulations</span>
+          <span class="cv-tag">Monte Carlo methods</span>
+          <span class="cv-tag">Machine learning for physics</span>
+        </div>
+        <div class="cv-entry">
+          <p class="cv-entry-subtitle mb-2">HPC</p>
+          <span class="cv-tag">SLURM</span>
+          <span class="cv-tag">GPU computing</span>
+          <span class="cv-tag">Parallel programming</span>
+        </div>
+        <div class="cv-entry">
+          <p class="cv-entry-subtitle mb-2">Tools</p>
+          <span class="cv-tag">Mathematica</span>
+          <span class="cv-tag">MATLAB</span>
+        </div>
+      </section>
+
+      <section class="cv-section">
+        <h2 class="cv-section-title">Teaching Experience</h2>
+        <div class="cv-entry">
+          <p class="cv-entry-description">Teaching Assistant — Physics for Life Sciences (Fall 2023)</p>
+        </div>
+        <div class="cv-entry">
+          <p class="cv-entry-description">Teaching Assistant — Classical Mechanics II (Spring 2023)</p>
+        </div>
+        <div class="cv-entry">
+          <p class="cv-entry-description">Teaching Assistant — Statistical Mechanics (Fall 2022)</p>
+        </div>
+        <div class="cv-entry">
+          <p class="cv-entry-description">Teaching Assistant — Classical Mechanics I (Fall 2022)</p>
+        </div>
+        <div class="cv-entry">
+          <p class="cv-entry-description">Teaching Assistant — Thermodynamics, UNAM (Spring 2019)</p>
+        </div>
+      </section>
+
+      <section class="cv-section">
+        <h2 class="cv-section-title">Professional Development</h2>
+        <div class="cv-entry">
+          <p class="cv-entry-description">Lattice Practices Conference — Forschungszentrum Jülich, Germany, 2025</p>
+        </div>
+        <div class="cv-entry">
+          <p class="cv-entry-description">HUGS — Jefferson Lab, USA, Summer 2024</p>
+        </div>
+        <div class="cv-entry">
+          <p class="cv-entry-description">Quantum Computing Boot-Camp — Jefferson Lab, USA, Summer 2023</p>
+        </div>
+        <div class="cv-entry">
+          <p class="cv-entry-description">2nd School of Quantum Computing — Instituto de Ciencias Nucleares (MX), Summer 2023</p>
+        </div>
+      </section>
+
+      <footer class="mt-12 pt-8 border-t border-[#27272a] text-center">
+        <p class="text-sm text-[#a1a1aa]">© 2026 Yamil A. Cahuana Medrano</p>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
